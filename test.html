@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Power BI Reports</title>
+    <style>
+        /* Atur tampilan untuk halaman */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        /* Atur tampilan container */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #0078d4;
+            margin-bottom: 20px;
+        }
+
+        /* Atur layout 2 kolom untuk laporan Power BI */
+        .reports {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Ukuran tiap iframe agar responsif */
+        .report {
+            flex: 1; /* Setiap iframe mengambil 50% dari lebar container */
+        }
+
+        iframe {
+            width: 100%;
+            height: 65vh;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Power BI Reports</h1>
+        <div class="reports">
+            <!-- Laporan pertama -->
+            <div class="report">
+                <iframe title="test" src="https://app.powerbi.com/reportEmbed?reportId=e2a49b51-1c37-46b5-b295-495b670ba1f4&autoAuth=true&ctid=a1647c30-a45b-4fe3-8881-dd686a25b476" allowFullScreen="true"></iframe>
+            </div>
+            <!-- Laporan kedua -->
+            <div class="report">
+                <iframe title="DATABASE" src="https://app.powerbi.com/reportEmbed?reportId=5eee05f9-852b-415d-9348-e7f7b6e67f7c&autoAuth=true&ctid=a1647c30-a45b-4fe3-8881-dd686a25b476" allowFullScreen="true"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
