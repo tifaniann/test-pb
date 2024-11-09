@@ -3,69 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Power BI Reports</title>
+    <title>Simple Web Page</title>
     <style>
-        /* Atur tampilan untuk halaman */
+        /* Gaya dasar untuk halaman */
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
             margin: 0;
-            background-color: #f3f4f6;
-            color: #333;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
-        /* Atur tampilan container */
+        /* Container utama */
         .container {
-            max-width: 1200px;
-            width: 100%;
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
             background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            text-align: center;
+            margin-top: 50px;
         }
 
         h1 {
-            font-size: 24px;
-            color: #0078d4;
-            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
         }
 
-        /* Atur layout 2 kolom untuk laporan Power BI */
-        .reports {
-            display: flex;
-            gap: 20px;
+        p {
+            color: #555;
+            line-height: 1.6;
         }
 
-        /* Ukuran tiap iframe agar responsif */
-        .report {
-            flex: 1; /* Setiap iframe mengambil 50% dari lebar container */
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        iframe {
-            width: 100%;
-            height: 65vh;
-            border: none;
+        img {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Power BI Reports</h1>
-        <div class="reports">
-            <!-- Laporan pertama -->
-            <div class="report">
-                <iframe title="test" src="https://app.powerbi.com/reportEmbed?reportId=e2a49b51-1c37-46b5-b295-495b670ba1f4&autoAuth=true&ctid=a1647c30-a45b-4fe3-8881-dd686a25b476" allowFullScreen="true"></iframe>
-            </div>
-            <!-- Laporan kedua -->
-            <div class="report">
-                <iframe title="DATABASE" src="https://app.powerbi.com/reportEmbed?reportId=5eee05f9-852b-415d-9348-e7f7b6e67f7c&autoAuth=true&ctid=a1647c30-a45b-4fe3-8881-dd686a25b476" allowFullScreen="true"></iframe>
-            </div>
+        <h1>Welcome to My Simple Web Page</h1>
+        <p>This is a simple HTML page. You can add text, images, or any content you'd like.</p>
+        
+        <!-- Contoh gambar -->
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x300" alt="Placeholder Image">
         </div>
+
+        <p>Feel free to explore and modify the code as per your needs. This is a great starting point for creating a webpage.</p>
     </div>
+
 </body>
 </html>
